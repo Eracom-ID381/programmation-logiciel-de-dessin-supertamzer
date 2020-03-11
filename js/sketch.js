@@ -9,7 +9,8 @@ function draw() {
     noFill();
     strokeWeight(1);
     stroke(255, 102, 0);
-    curve(width / 2, height / 2, width / 2, mouseY, mouseX, mouseY, mouseY, mouseX);
+    rectMode(CORNERS);
+    rect(mouseX, mouseY, mouseX + 100, mouseY + 200);
 }
 
 function windowResized() {
