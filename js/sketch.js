@@ -24,6 +24,21 @@ function draw() {
             //line(mouseX + 250, mouseY, mouseX + 250, mouseY + height)
             curve(width / 2, height / 2, width / 2, mouseY, mouseX, mouseY, mouseY, mouseX);
         }
+        if (mode == 2) {
+            stroke(0, 255, 0);
+            line(mouseX, mouseY, mouseX + 150, mouseY);
+        }
+
+        if (mode == 3) {
+            stroke(0, 255, 0);
+            line(mouseX, mouseY, mouseX, mouseY + 150);
+        }
+        if (mode == 4) {
+            stroke(255, 102, 0);
+            circle(mouseX, mouseY, 150);
+        }
+
+
     }
 
 
@@ -39,6 +54,15 @@ function keyPressed() {
     }
     if (key == "2") {
         mode = 1;
+    }
+    if (key == "3") {
+        mode = 2;
+    }
+    if (key == "4") {
+        mode = 3;
+    }
+    if (key == "5") {
+        mode = 4;
     }
 }
 
