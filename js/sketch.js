@@ -7,6 +7,9 @@ function setup() {
 }
 
 function draw() {
+    fill(255, 102, 0)
+    textSize(20);
+    text('1 = montagne  2 = building 3 = ligne horizontale  4 = ligne verticale 5 = cercle', 10, windowHeight - 10);
     noFill();
     strokeWeight(1);
     //curve(width / 2, height / 2, mouseX, height - 100, mouseX, mouseY, mouseY, mouseX);
@@ -31,7 +34,7 @@ function draw() {
 
         if (mode == 3) {
             stroke(0, 255, 0);
-            line(mouseX, mouseY, mouseX, mouseY + 150);
+            line(mouseX, mouseY, mouseX, mouseY + 125);
         }
         if (mode == 4) {
             stroke(255, 102, 0);
@@ -40,8 +43,6 @@ function draw() {
 
 
     }
-
-
 
 }
 
@@ -64,6 +65,7 @@ function keyPressed() {
     if (key == "5") {
         mode = 4;
     }
+
 }
 
 
